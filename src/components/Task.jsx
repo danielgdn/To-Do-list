@@ -18,7 +18,7 @@ function Tasks({ tasks, onTaskClick, deleteTask }) {
           <button
             onClick={() => onTaskClick(task.id)}
             className={`bg-slate-400 w-full text-white p-2 rounded-md text-left flex items-center gap-2  ${
-              task.isCompleted && "line-through italic text-rose-600"
+              task.isCompleted && "line-through italic"
             }`}
           >
             {task.isCompleted && <CheckIcon />}
